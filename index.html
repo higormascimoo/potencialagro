@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- LINK CSS ---->
+    <link rel="stylesheet" href="css/style.css">
+    <!----- LINK FONTAWESOME ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!----- LINK SLICK JS ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="icon" href="img/logo/icon.png" type="image/png">
+
+    <title>Potencial Agro</title>
+
+</head>
+<body>
+    
+<!------------ MENU ------------->
+<nav class="menu">
+
+    <div>
+       <img src="img/logo/icon.png" alt="logo">
+    </div>
+
+    <ul id="open" class="responsive">
+        <a href="index.html"><li class="activelink">Home</li></a>
+        <a href="servicos.html"><li>Serviços</li></a>
+        <a href="sobre.html"><li>Sobre</li></a>
+        <a href="contato.html"><li>Contatos</li></a>
+    </ul>
+
+    <div id="btnsmenu">
+        <i id="btnOpen" class="fas fa-bars" onclick="openMenu()"></i>
+        <i id="btnClose" class="fas fa-times"  onclick="closeMenu()"></i>
+    </div>
+
+</nav>
+<!------------ HERO ------------->
+<header class="hero"> 
+    <section>
+        <h1>Potencial Agro </h1>
+        <p>Crédito agro para o seu negócio</p>
+        <a href="servicos.html"><button class="btnall">Mais Detalhes</button></a>
+    </section>
+</header>
+<!------------ Services ------------->
+<section class="services">
+    <div>
+        <h1>Nossos serviços</h1>
+        <hr>
+    </div>
+
+    <ul>
+        <a href="gerenciamentodeobras.html">
+            <i class="fas fa-hard-hat"></i>
+            <p>
+                Gerenciamento 
+                de Obras
+            </p>
+        </a>
+
+        <a href="pericias.html">
+            <i class="fas fa-paint-roller"></i>
+            <p>
+                Perícias
+            </p>
+        </a>
+
+        <a href="avaliacoes.html">
+            <i class="fas fa-hammer"></i>
+            <p>
+                Avaliações
+            </p>
+        </a>
+    </ul>
+
+</section>
+<!------------ SOBRE NÓS ------------->
+<section class="sobre">
+    <div>
+        <section>
+            <h1>Sobre Nós</h1>
+            <hr>
+        </section>
+        <p>
+            A <b>Potencial Agro</b>  .
+            <br><br>
+            Nascida em 2021 é uma a empresa de crédito agro, 
+            consequência de uma equipe visionária em busca 
+            de alto desempenho no agro negócio.
+      
+            <br><br>
+            Nós do grupo POTENCIAL AGRO  trabalhamos para
+            desenvolver e estruturar operações financeiras 
+            provendo as necessidades adequadas quanto à demanda 
+            de recursos para produtores e empresas rurais, no custeio
+            e comercialização das safras agrícolas, utilizamos 
+            os instrumentos financeiros disponíveis respeitando 
+            o ciclo operacional de cada cadeia produtiva.                                                     
+        </p>
+        <a href="sobre.html"><button class="btnall">Ver mais</button></a>
+    </div>
+    <div class="imgsobre">
+    </div>
+</section>    
+<!------------ PORTFOLIO ------------->
+<section class="portfolio">
+    <div>
+        <h1>Trabalhos</h1>
+        <hr>
+    </div>
+
+    <ul>
+        <li>
+            <figure>
+                <img src="img/trabalhos/Assistencia.jpg" alt="">
+            </figure>
+            <figcaption>
+                <p>ASSISTÊNCIA TÉCNICA JUDICIAL - ELABORAÇÃO DE QUESITOS</p>
+            </figcaption>
+        </li>
+
+        <li>
+            <figure>
+                <img src="img/trabalhos/Avaliacoes.jpg" alt="">
+            </figure>
+            <figcaption>
+                <p>AVALIAÇÃO DE IMÓVEIS</p>
+            </figcaption>
+        </li>
+
+        <li>
+            <figure>
+                <img src="img/trabalhos/Orcamento.jpeg" alt="">
+            </figure>
+            <figcaption>
+                <p>ORÇAMENTO DE OBRAS</p>
+            </figcaption>
+        </li>
+
+    </ul>
+    
+</section>
+<!------------ CONTATOS ------------->
+<section class="contato">
+    <div>
+        <h1>Contate-nos</h1>
+        <hr>
+    </div>
+
+    <form action="https://formsubmit.co/fxagrosolucoes@gmail.com" method="POST">
+
+        <div>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+        </div>
+
+        <div>
+            <textarea placeholder="Mensagem" required></textarea>
+        </div>
+        
+        <button type="submit" class="btnall">Enviar</button>
+    </form>
+
+    
+</section>
+<!------------ FOOTER ------------->
+<footer>
+    <section>
+        <ul>
+            <a id="insta" href="https://www.instagram.com/potencial.agro"><i class="fab fa-instagram"></i></a>
+            <a id="face" href="https://www.facebook.com/potencialagro"><i class="fab fa-facebook-f"></i></a>
+            <a id="whats" href="https://mywhats.net/pootencialagro"><i class="fab fa-whatsapp"></i></a>
+        </ul>
+    
+        <p>©Potencial Agro 2022. Todos os direitos reservados</p>
+    </section>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

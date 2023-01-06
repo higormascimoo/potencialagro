@@ -1,0 +1,1275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/******* RESET *******/
+*{
+    color: #FAFAFA;
+    font-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/******* BODY *******/
+body {
+
+    background-color: #151515;
+}
+
+/********** SCROLL BAR *************/
+
+::-webkit-scrollbar{
+
+    width: 7px;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color:  #047a0e;
+}
+
+
+.logoimg {
+    height: 72px;
+    padding-left: 60px;
+
+    
+  }
+/******* BUTTON ALL *******/
+
+.btnall{
+
+    background: none;
+    border: 2px solid #FAFAFA;
+    width: 200px;
+    border-radius: 3px;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btnall:hover{
+
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #047a0e;
+    color: #FAFAFA;
+    border: 2px solid #047a0e;
+    box-shadow: 0px 0px 20px 0px #047a0e;
+}
+
+/******* MENU *******/
+
+.menu {
+
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.menu ul{
+
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li{
+
+    margin: 0px 5px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FAFAFA;
+    transition: 0.5s;
+}
+
+.menu ul li:hover{
+
+    background-color: #047a0e;
+
+}
+
+#btnsmenu{
+
+    display: none;
+}
+
+.activelink{
+
+    background-color: #047a0e;
+    color: #FAFAFA !important;
+}
+
+.sticky ul li:hover{
+    color: #FAFAFA;
+}
+
+.menu div img{
+
+    width: 80px;
+}
+
+.menu div{
+
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu div img{
+
+    padding-top: 0%;
+    width: 60px;
+}
+
+.menu div p{
+
+    color: #FAFAFA;
+    font-size: 0.8rem;
+}
+
+.sticky{
+
+    height: 70px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 10px 0px #000000;
+    transition: 0.5s;
+}
+
+.sticky div h1{
+
+    color: #000000;
+    max-width: 200px; 
+    max-height: 150px
+}
+
+.sticky ul a li{
+
+    color: #000000;
+}
+
+/******* HERO *******/
+
+.hero {
+
+    width: 100%;
+    height: 700px;
+    background-color: #FAFAFA;
+    background-image: url(..//img/fundos/sobre3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+
+
+.hero section{
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero section h1{
+
+    color: #FAFAFA;
+    font-size: 6rem;
+}
+
+.hero section p{
+
+    color: #ffffffbd;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero section button{
+
+    margin-top: 30px;
+    border: #FAFAFA 2px solid;
+    color: #FAFAFA;
+}
+
+/******* SERVIÇOS *******/
+
+.services{
+
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.services div h1{
+
+    font-size: 2rem;
+}
+
+.services div hr{
+
+    background-color: #047a0e;
+    width: 50%;
+    height: 2px;
+    border: none;
+    margin-top: 20px;
+}
+
+.services ul {
+
+    width: 85%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.services ul a{
+
+    width: 85%;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    background-color: #2c2c2c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.services ul a:hover{
+
+    background-color: #047a0e;
+}
+
+.services ul a:hover p{
+
+    transition: 0.6s;
+}
+
+.services ul a:hover i{
+
+    color: #FAFAFA;
+    background-color: #000000;
+    border: 6px #6d6d6d solid;
+}
+
+.services ul a i{
+
+    color: #000000;
+    font-size: 3rem;
+    background-color: #047a0e;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: #047a0e 6px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services ul a p{
+
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FAFAFA;
+}
+
+/******* SOBRENOS *******/
+
+.sobre{
+
+    height: max-content;
+    margin-top: 100px;
+
+    padding: 100px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #2c2c2c !important;
+}
+
+.sobre div{
+
+    width: 40%;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sobre div p{
+
+    width: 85%;  
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.sobre section h1{
+
+    font-size: 2rem;
+}
+
+.sobre section hr{
+
+    background-color: #047a0e;
+    height: 2px;
+    margin-top: 20px;
+    width: 50%;
+    border: none;
+}
+
+.imgsobre{
+
+    background-image: url(..//img/sobrenos/sobree.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0px #000000a9;
+}
+
+/******* PORTFÓLIO *******/
+
+.portfolio{
+
+    width: 100%;
+    height: max-content;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.portfolio div h1{
+
+    font-size: 2rem;
+}
+
+.portfolio div hr{
+
+    background-color: #047a0e;
+    height: 2px;
+    margin-top: 20px;
+    width: 50%;
+    border: none;
+}
+
+.portfolio ul{
+
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    width: 85%;
+    height: 430px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+
+.portfolio ul li{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 90%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.portfolio ul li figure{
+
+    width: 100%;
+    height: 70%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.portfolio ul li figure img{
+
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.portfolio ul li figcaption{
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.portfolio ul li figcaption h1{
+
+    color: #047a0e;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.portfolio ul li figcaption p{
+
+    color: #FAFAFA;
+    font-weight: 600;
+    text-align: center;
+}
+/******* CONTATOS *******/
+
+.contato {
+
+    width: 100%;
+    height: max-content;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2c2c2c;
+}
+
+.contato div{
+
+    margin-top: 60px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contato div h1{
+
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.contato div hr{
+
+    width: 50%;
+    height: 2px;
+    background-color: #047a0e;
+    border: none;
+    margin-top: 20px;
+}
+
+.contato form{
+
+    height: 600px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contato form div{
+
+    width: 100%;
+    height: max-content;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.contato form div input{
+
+    width: 45%;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    color: #FAFAFA;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.contato form textarea{
+
+    width: 100%;
+    height: 200px;
+    font-size: 1.2rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    color: #FAFAFA;
+    padding: 20px;
+    font-weight: 500;
+    resize: none;
+}
+
+.contato form textarea::placeholder,
+.contato form input::placeholder{
+
+    color: #FAFAFA;
+}
+
+.contato form textarea:focus::placeholder,
+.contato form input:focus::placeholder{
+
+    padding-left: 20px;
+    transition: 0.5s;
+    font-style: italic;
+    color: #047a0e;
+
+}
+
+.contato form textarea:focus,
+.contato form input:focus{
+
+    border: 2px solid #047a0e;
+}
+
+/******* FOOTER *******/
+
+footer{
+
+    width: 100%;
+    height: 200px;
+    background-image: url(..//img/fundos/trator.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0px #000000af;
+}
+
+footer section{
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer ul a {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    border: 1px solid #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer ul a i{
+
+    font-size: 1.5rem;
+    color: #FAFAFA;
+}
+
+footer section p{
+
+    margin-top: 30px;
+    font-size: 1.3rem;
+    color: #FAFAFA;
+}
+
+/**********************************/
+/******* SOBRE NÓS COMPLETO *******/
+/**********************************/
+
+.sobrenos {
+
+    width: 100%;
+    height: max-content;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosobre{
+
+    width: 100%;
+    height: 300px;
+    background-image: url(..//img/fundos/sobre3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosobre li{
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosobre li h1{
+
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #FAFAFA;
+}
+
+.textossobre{
+
+    width: 85%;
+    height:600px;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textossobre section{
+
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.textossobre section li{
+
+    margin: auto;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px #047a0e solid;
+    border-radius: 10px;
+}
+
+.textossobre section li h1{
+
+    margin-left: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.textossobre section li p{
+
+    margin-left: 30px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+/**********************************/
+/******* PÁGINA DE CONTATOS *******/
+/**********************************/
+
+.contactpage{
+
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactpage div{
+
+    background-image: url(..//img/fundos/contato.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+
+.contactpage div section{
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactpage div section h1{
+    
+    font-size: 3rem;
+    color: #FAFAFA;
+}
+
+.contatoslinks{
+
+    width: 85%;
+    height: 600px;
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contatoslinks a{
+
+    margin: auto;
+    width: 50%;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.contatoslinks a i{
+
+    font-size: 2rem;
+    margin-right: 40px;
+    color: #FAFAFA;
+    margin-left: 50px;
+}
+
+.contatoslinks a p{
+
+    color: #FAFAFA;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.contatoslinks a b{
+
+    text-transform: uppercase;
+}
+
+.contatoslinks a b{
+
+    color: #92b349;
+}
+
+.contatoslinks a:hover{
+
+    cursor: pointer;
+    background-color: #047a0e;
+    transition: 0.5s;
+}
+
+.contatoslinks a:hover i{
+
+    color: #FAFAFA;
+    transition: 0.5s;
+}
+
+.contatoslinks a:hover b{
+
+    color: #FAFAFA;
+}
+
+.contatoslinks a:hover p{
+
+    color: #FAFAFA;
+    transition: 0.5s;
+}
+
+
+/**********************************/
+/*********** PERICIA PAGE *********/
+/**********************************/
+
+.periciaspage{
+
+    width: 100%;
+    height: 400px;
+    background: url(..//img/fundos/pericia.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+
+.periciaspage section{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ad;
+}
+
+.periciaspage section i{
+
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+    border: 5px solid #047a0e;
+    background-color: #047a0e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.periciaspage section h1{
+
+    font-size: 3rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+}
+
+.periciatext{
+
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.periciatext div{
+
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.periciatext h1{
+
+    width: 100%;
+    margin: 50px 0px;
+    text-transform: uppercase;
+    border-left: #92b349 5px solid;
+    padding-left: 20px;
+}
+
+.periciatext p{
+
+    width: 100%;
+}
+
+.periciatext div p b {
+    
+    margin-right: 10px;
+}
+
+
+.painelThanks{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.painelThanks h1{
+
+    color: #92b349;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size:3rem;
+    width: 80%;
+    text-align: center;
+}
+
+.painelThanks p{
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.painelThanks button{
+    margin-top: 40px;
+}
+
+/* RESPONSIVIDADE */
+
+@media all and (max-width: 768px) {
+
+    /* MENU RESPONSIVE */
+
+    .menu{
+
+        background-color: #FAFAFA;
+        z-index: 999 !important;
+        height: 70px;
+    }
+
+    .menu div{
+
+        margin-left: 50px;
+    }
+    
+    #btnsmenu{
+
+        display: block;
+    }
+
+    #btnsmenu i{
+
+        color: #151515;
+        font-size: 3rem;
+        margin-right: 50px;
+    }
+
+    #btnsmenu .fa-times{
+        display: none;
+    }
+
+    #open{
+
+        display: none;
+    }
+
+    .responsive{
+
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        height: calc(100vh - 70px);
+        background-color: #000000a9;
+        backdrop-filter: blur(15px);
+        width: 100%;
+        z-index: 99;
+        gap: 30px;
+        transition: .3s;
+        animation: menuResponsive .3s;
+    }
+
+    @keyframes menuResponsive {
+
+        0% {
+            width: 0%;
+        }
+    }
+
+    .sticky ul a li{
+        color: #f4f4f4;
+    }
+    
+    .responsive a{
+        
+        width: 89%;
+        text-align: center;
+        padding: 15px 0px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FAFAFA70;
+        backdrop-filter: blur(3px);
+    }
+
+    .responsive a li{
+
+        font-size: 1rem;
+    }
+
+    .activelink{
+
+        background: none;
+        color: #FAFAFA !important;
+    }
+
+    /* HERO */
+    .hero section h1{
+
+        width: 80%;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .hero section p{
+
+        width: 80%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* SERVIÇOS */
+    .services{
+        height: max-content;
+    }
+    
+    .services ul{
+
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        height: max-content;
+    }
+
+    .services ul a{
+        
+        width: 100%;
+        height: 200px;
+        padding: 20px 0px;
+    }
+
+    .textossobre{
+
+        height: max-content;
+    }
+
+    .textossobre section{
+
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    
+    .textossobre section li{
+        
+        width: 100%;
+        margin: 10px;
+        height: max-content;
+        padding: 30px 0px;
+
+    }
+
+    .textossobre section li p{
+        width: 80%;
+    }
+
+    .periciaspage section{
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .periciaspage section i{
+        margin-top: 100px;
+    }
+
+    .periciaspage section h1{
+        font-size: 2.4rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* SOBRE NÓS */
+    .sobre{
+
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        height: max-content;
+        padding: 50px 0px;
+    }
+
+    .sobre div{
+        width: 85%;
+
+    }
+
+    .sobre div p{
+
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .imgsobre{
+        box-shadow: 0px 0px 30px 0px #151515;
+    }
+
+    .sobre div section{
+
+        margin: 50px 0px;
+    }
+
+    /* TRABALHOS */
+
+    .portfolio ul{
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+
+    .portfolio ul li{
+
+        width: 100%;
+        height: 300px;
+    }
+
+    /* CONTATOS */
+
+    .contato form div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .contato form{
+        padding-bottom: 100px;
+    }
+
+    .contato form div input{
+        width: 100%;
+    }
+
+    .contatoslinks a{
+
+        width: 100%;
+    }
+
+    .contactpage div section h1{
+
+        text-align: center;
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    /* FOOTER */
+
+    footer section p{
+
+        font-size: 1rem;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 425px) {
+
+    /* HERO */
+    .hero section h1{
+        font-size: 2.5rem;
+    }
+
+    .hero section p{
+
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    /* SOBRE */
+
+    .imgsobre{
+        height: 300px !important;
+    }
+
+    .sobre div p{
+
+        font-size: 1rem;
+        height: min-content;
+    }
+
+    /* CONTATOS */
+
+    .contatoslinks a{
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .contatoslinks a li{
+
+        display: flex;
+        margin-top: 20px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contatoslinks a li p{
+
+        width: max-content;
+        font-size: .7rem;
+    }
+}   
